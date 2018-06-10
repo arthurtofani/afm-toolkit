@@ -2,13 +2,43 @@
 
 require "bundler/setup"
 require "afm_toolkit"
+require "pry"
+require 'pycall'
+require 'pycall/import'
+require 'python/python'
+require 'python/ndarray'
+require 'yaml'
+require 'fileutils'
+require "workspace"
+require "audio"
+require 'audio_information'
+require "event_array"
+require 'wrapper'
+require 'wrappers/aubio'
+require 'wrappers/echoprint'
+require 'ruby-audio'
+require 'novelty_function'
+require 'novelty_functions/hfc'
+require 'novelty_functions/energy'
+require 'novelty_functions/echoprint'
+require 'onset_array'
+require 'audio_event'
+require 'string'
+require 'degradation_process'
+require 'degradations'
+require 'degradations/pitch'
+require 'degradations/time'
+require 'analyzers'
+require 'analyzers/onset_matcher'
+
+
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
 
 # (If you use this, don't forget to add pry to your Gemfile!)
-# require "pry"
-# Pry.start
+
+#Pry.start
 
 require "irb"
 IRB.start(__FILE__)
